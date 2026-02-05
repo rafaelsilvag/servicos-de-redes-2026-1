@@ -1,0 +1,5 @@
+2026-02-05 22:56:49 info cfgInit.doInit:cfgInit.java:1204 booting
+2026-02-05 22:56:49 info cfgInit.doInit:cfgInit.java:1234 initializing hardware
+2026-02-05 22:56:49 info cfgInit.doInit:cfgInit.java:1240 applying defaults
+2026-02-05 22:56:49 info cfgInit.doInit:cfgInit.java:1267 applying configuration
+2026-02-05 22:56:49 info cfgInit.doInit:cfgInit.java:1304 boot completed

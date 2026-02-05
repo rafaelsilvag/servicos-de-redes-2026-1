@@ -8,23 +8,19 @@ Este diagrama representa as conexões lógicas e físicas entre os dispositivos.
 
 ```mermaid
 graph LR
-    subgraph "Rede A (Sub-rede 1)"
-        h1[Host: h1]
-    end
+    %% Definição dos Nós
+    h1[Host: h1]
+    r1((Roteador: r1))
+    h2[Host: h2]
 
-    subgraph "Roteador Central"
-        r1((Roteador: r1))
-    end
+    %% Definição das Conexões com rótulos das portas
+    %% h1 ethernet1 <-> r1 ethernet1
+    h1 -- "eth1 ↔ eth1" --- r1
 
-    subgraph "Rede B (Sub-rede 2)"
-        h2[Host: h2]
-    end
+    %% r1 ethernet2 <-> h2 ethernet1
+    r1 -- "eth2 ↔ eth1" --- h2
 
-    %% Conexões Físicas especificadas
-    h1 -- "Cabo Ethernet" --- eth1_r1[Porta: ethernet1]
-    eth1_r1 --- r1
-    r1 --- eth2_r1[Porta: ethernet2]
-    eth2_r1 -- "Cabo Ethernet" --- h2
-
-    %% Estilização simples
+    %% Estilização visual (opcional)
     style r1 fill:#ff9,stroke:#333,stroke-width:2px
+    style h1 fill:#dff,stroke:#333
+    style h2 fill:#dff,stroke:#333

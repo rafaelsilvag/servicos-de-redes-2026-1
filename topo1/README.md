@@ -9,7 +9,7 @@ Abaixo está a documentação da topologia solicitada, incluindo diagramas visua
 Este diagrama representa as conexões lógicas e físicas entre os dispositivos.
 
 ```mermaid
-graph TD
+graph TR
     subgraph "Rede A (Sub-rede 1)"
         h1[Host: h1]
     end

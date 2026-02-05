@@ -1,4 +1,4 @@
-hostname r2
+hostname r1
 buggy
 !
 logging file debug ./logs/r2-log.run

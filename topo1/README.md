@@ -1,7 +1,5 @@
 # Topologia de Rede: 2 Hosts e 1 Roteador
 
-Abaixo está a documentação da topologia solicitada, incluindo diagramas visuais, descrição física e uma sugestão de configuração lógica (IP) para torná-la funcional.
-
 ## 1. Diagramas Visuais
 
 ### Diagrama

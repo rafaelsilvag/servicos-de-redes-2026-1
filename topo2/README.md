@@ -6,7 +6,7 @@ Este documento detalha uma topologia de rede linear onde dois hosts terminais (`
 
 ## Diagrama da Topologia (Mermaid)
 
-O diagrama abaixo ilustra as conexões físicas exatas entre as portas dos dispositivos, conforme solicitado. O fluxo é apresentado da esquerda para a direita.
+O diagrama abaixo ilustra as conexões físicas exatas entre as portas dos dispositivos.
 
 ```mermaid
 graph LR

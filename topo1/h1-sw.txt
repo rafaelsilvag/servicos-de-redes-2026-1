@@ -1,7 +1,7 @@
-hostname r1
+hostname h1
 buggy
 !
-logging file debug ./logs/r1-log.run
+logging file debug ./logs/h1-log.run
 !
 vrf definition v1
  exit

@@ -1,0 +1,27 @@
+hostname r1
+buggy
+!
+logging file debug ./logs/r1-log.run
+!
+vrf definition v1
+ exit
+!
+interface ethernet1
+ vrf for v1
+ no log-link-change
+ exit
+!
+interface ethernet2
+ vrf for v1
+ no log-link-change
+ exit
+!
+server telnet tester
+ security protocol telnet
+ no exec authorization
+ no login authentication
+ vrf v1
+ exit
+!
+!
+end

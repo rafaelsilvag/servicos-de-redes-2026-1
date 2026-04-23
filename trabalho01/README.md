@@ -19,7 +19,9 @@ Implementar uma aplicação web conteinerizada utilizando **Docker Compose**, co
 
 A arquitetura esperada da solução é composta por três containers principais: **NGINX**, **FastAPI** e **PostgreSQL**.  
 O **NGINX** será o único serviço exposto ao hospedeiro, com mapeamento das portas **80** e **443**, servindo o frontend estático na raiz `/` e encaminhando as requisições de `/api` para o backend em **FastAPI**.  
-O backend deverá se conectar ao banco **PostgreSQL** por meio da rede interna da aplicação, utilizando variáveis de ambiente para configuração. O banco de dados deverá utilizar volume para persistência.
+O backend deverá se conectar ao banco **PostgreSQL** por meio da rede interna da aplicação, utilizando variáveis de ambiente para configuração. O banco de dados deverá utilizar volume para persistência.  
+Além do volume do **PostgreSQL**, a topologia também poderá utilizar volume no **NGINX** para os arquivos estáticos do frontend e no **FastAPI** para o código da aplicação.  
+A inicialização do serviço **FastAPI** depende da disponibilidade inicial do **PostgreSQL**, pois o backend recebe por variáveis de ambiente a definição do endereço do banco no momento da criação da topologia e utiliza essa informação para estabelecer a conexão com o serviço de banco de dados.
 
 ![Topologia da aplicação](topologia-docker-compose.png)
 
@@ -83,6 +85,8 @@ A solução deve possuir, no mínimo, os seguintes containers:
 ### 2. Backend FastAPI
 A API deverá:
 
+- depender do início do serviço PostgreSQL;
+
 - rodar em container próprio;
 - escutar na porta **8080**;
 - implementar **CRUD completo** do tema proposto;
@@ -111,6 +115,8 @@ O serviço do banco deverá:
 
 ### 5. Docker Compose
 O arquivo `docker-compose.yml` deverá:
+
+- prever a dependência de inicialização entre FastAPI e PostgreSQL;
 
 - definir todos os serviços;
 - criar uma **rede própria** para a aplicação;

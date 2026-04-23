@@ -140,16 +140,16 @@ O frontend deve:
 
 Cada grupo deverá implementar o CRUD de acordo com um dos temas abaixo.
 
-| Grupo | Tema | Entidades Sugeridas |
-| :--- | :--- | :--- |
-| **Grupo 1** | Sistema de Cadastro de Usuários e Perfis | usuários, perfis |
-| **Grupo 2** | Catálogo de Produtos e Categorias | produtos, categorias |
-| **Grupo 3** | Sistema de Biblioteca | livros, autores |
-| **Grupo 4** | Controle de Alunos e Cursos | alunos, cursos |
-| **Grupo 5** | Sistema de Agendamentos | clientes, agendamentos |
-| **Grupo 6** | Controle de Pedidos | pedidos, itens_pedido |
-| **Grupo 7** | Sistema de Filmes e Avaliações | filmes, avaliacoes |
-| **Grupo 8** | Controle de Tarefas e Projetos | tarefas, projetos |
+| Grupo | Tema | Entidades Sugeridas | Exemplos de Rotas |
+| :--- | :--- | :--- | :--- |
+| **Grupo 1** | Sistema de Cadastro de Usuários e Perfis | usuários, perfis | `GET /usuarios`, `POST /usuarios`, `PUT /usuarios/{id}`, `DELETE /usuarios/{id}`, `GET /perfis` |
+| **Grupo 2** | Catálogo de Produtos e Categorias | produtos, categorias | `GET /produtos`, `POST /produtos`, `PUT /produtos/{id}`, `DELETE /produtos/{id}`, `GET /categorias` |
+| **Grupo 3** | Sistema de Biblioteca | livros, autores | `GET /livros`, `POST /livros`, `PUT /livros/{id}`, `DELETE /livros/{id}`, `GET /autores` |
+| **Grupo 4** | Controle de Alunos e Cursos | alunos, cursos | `GET /alunos`, `POST /alunos`, `PUT /alunos/{id}`, `DELETE /alunos/{id}`, `GET /cursos` |
+| **Grupo 5** | Sistema de Agendamentos | clientes, agendamentos | `GET /clientes`, `POST /clientes`, `GET /agendamentos`, `POST /agendamentos`, `DELETE /agendamentos/{id}` |
+| **Grupo 6** | Controle de Pedidos | pedidos, itens_pedido | `GET /pedidos`, `POST /pedidos`, `PUT /pedidos/{id}`, `DELETE /pedidos/{id}` |
+| **Grupo 7** | Sistema de Filmes e Avaliações | filmes, avaliacoes | `GET /filmes`, `POST /filmes`, `PUT /filmes/{id}`, `DELETE /filmes/{id}`, `GET /avaliacoes` |
+| **Grupo 8** | Controle de Tarefas e Projetos | tarefas, projetos | `GET /tarefas`, `POST /tarefas`, `PUT /tarefas/{id}`, `DELETE /tarefas/{id}`, `GET /projetos` |
 
 ---
 
@@ -170,12 +170,12 @@ nome-do-projeto/
 │   │   ├── routes/
 │   │   └── schemas/
 ├── nginx/
-    ├── Dockerfile (opcional)
-    ├── nginx.conf
-    └── html/
-        ├── index.html
-        ├── style.css
-        └── script.js
+│   ├── Dockerfile (opcional)
+│   ├── nginx.conf
+│   └── html/
+│       ├── index.html
+│       ├── style.css
+│       └── script.js
 
 ```
 

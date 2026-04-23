@@ -14,6 +14,17 @@ Implementar uma aplicação web conteinerizada utilizando **Docker Compose**, co
 
 ---
 
+
+## Topologia da aplicação
+
+A arquitetura esperada da solução é composta por três containers principais: **NGINX**, **FastAPI** e **PostgreSQL**.  
+O **NGINX** será o único serviço exposto ao hospedeiro, com mapeamento das portas **80** e **443**, servindo o frontend estático na raiz `/` e encaminhando as requisições de `/api` para o backend em **FastAPI**.  
+O backend deverá se conectar ao banco **PostgreSQL** por meio da rede interna da aplicação, utilizando variáveis de ambiente para configuração. O banco de dados deverá utilizar volume para persistência.
+
+![Topologia da aplicação](topologia-docker-compose.png)
+
+---
+
 ## Descrição geral da atividade
 
 Cada grupo deverá desenvolver uma aplicação completa com os seguintes componentes:
@@ -399,7 +410,3 @@ Como diferencial, o grupo poderá implementar um ou mais dos itens abaixo:
 Esses itens não substituem os requisitos obrigatórios, mas podem ser considerados positivamente em casos limítrofes de avaliação.
 
 ---
-
-## Enunciado resumido para disponibilizar aos alunos
-
-**Atividade prática em dupla ou trio:** desenvolver uma aplicação web conteinerizada usando **Docker Compose**, composta por **NGINX**, **FastAPI** e **PostgreSQL**. O NGINX deverá servir um frontend simples na raiz `/` e atuar como proxy reverso, encaminhando `/api` para o backend FastAPI. O backend deverá implementar um CRUD completo relacionado ao tema do grupo e conectar-se ao PostgreSQL via variáveis de ambiente. O banco deverá usar usuário `postgres` e senha igual à matrícula de um dos integrantes. Devem ser utilizados **volumes**, **rede específica**, `Dockerfile`, `docker-compose.yml` e repositório no **GitHub** com documentação de execução. Valor da atividade: **20 pontos**.

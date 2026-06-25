@@ -11,7 +11,7 @@ Atividade em **dupla** ou **trio**
 
 | Critério | Peso | Pontos |
 | :--- | :--- | :--- |
-| Entrevista técnica em sala (07/07/2026) | 80% | 24,0 |
+| Entrevista técnica em sala (03/07/2026) | 80% | 24,0 |
 | Entrega do repositório e implementação funcional | 20% | 6,0 |
 
 ---
@@ -354,7 +354,5 @@ Os itens abaixo não substituem os requisitos obrigatórios, mas podem ser consi
 | :--- | :--- |
 | Início da atividade | 24/06/2026 |
 | Entrega do repositório e entrevista | **07/07/2026** |
-
-> Tempo disponível: **13 dias corridos**.
 
 ---

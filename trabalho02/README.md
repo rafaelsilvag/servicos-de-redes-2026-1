@@ -328,7 +328,7 @@ O `README.md` do grupo deve conter:
 
 ## Entrega
 
-Cada grupo deverá entregar até **07/07/2026 (antes da entrevista)**:
+Cada grupo deverá entregar até **03/07/2026 (antes da entrevista)**:
 
 1. **Link do repositório GitHub** (enviar ao professor pelo canal definido em aula).
 2. Aplicação **funcionando** no cluster com 2 VMs, pronta para demonstração em sala.

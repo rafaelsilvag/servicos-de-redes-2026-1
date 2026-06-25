@@ -262,7 +262,7 @@ O uncloud é um orquestrador de containers open source minimalista, projetado pa
 
 - Manter a mesma funcionalidade do Trabalho 01 (NGINX + FastAPI + PostgreSQL com CRUD completo).
 - Os `Dockerfile`s podem ser reaproveitados do Trabalho 01.
-- As imagens devem ser publicadas no **Docker Hub** (conta gratuita, sem necessidade de login para `pull`) ou construídas localmente e documentadas.
+- Se achar necessário, podem publicadar as imagens no **Docker Hub** (conta gratuita, sem necessidade de login para `pull`) ou podem manter a contrução localmente e documentadas.
 
 ### 3. Serviço de logs (Loki)
 

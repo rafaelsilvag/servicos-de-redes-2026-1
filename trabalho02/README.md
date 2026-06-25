@@ -332,7 +332,7 @@ Cada grupo deverá entregar até **03/07/2026 (antes da entrevista)**:
 
 1. **Link do repositório GitHub** (enviar ao professor pelo canal definido em aula).
 2. Aplicação **funcionando** no cluster com 2 VMs, pronta para demonstração em sala.
-3. Presença na **entrevista técnica** no dia **07/07/2026**.
+3. Presença na **entrevista técnica** no dia **03/07/2026**.
 
 ---
 
@@ -353,6 +353,6 @@ Os itens abaixo não substituem os requisitos obrigatórios, mas podem ser consi
 | Evento | Data |
 | :--- | :--- |
 | Início da atividade | 24/06/2026 |
-| Entrega do repositório e entrevista | **07/07/2026** |
+| Entrega do repositório e entrevista | **03/07/2026** |
 
 ---
